@@ -56,6 +56,8 @@ public class CalcTest {
 
 		System.out.println("The Result is:" + result);
 
+		sc.close();
+
 	}
 
 }
