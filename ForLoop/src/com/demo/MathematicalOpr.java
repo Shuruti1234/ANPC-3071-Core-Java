@@ -50,7 +50,7 @@ public class MathematicalOpr {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter any number:");
 		int number = sc.nextInt();
-		// printFactorial(number);
+		printFactorial(number);
 		checkPrime(number);
 
 		sc.close();
