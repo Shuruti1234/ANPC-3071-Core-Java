@@ -20,6 +20,7 @@ public class StudentTest {
 
 		// creating object of Student class
 		Student s1 = new Student();
+		Student s2 = new Student();
 
 		// declaring an object of Scanner
 		Scanner sc = new Scanner(System.in);
@@ -30,7 +31,7 @@ public class StudentTest {
 
 		// taking input
 		System.out.println("Enter the student Name:");
-		name = sc.nextLine();
+		name = sc.next();
 		System.out.println("Enter the student Id:");
 		id = sc.nextInt();
 
@@ -40,12 +41,27 @@ public class StudentTest {
 		// call the method getDetails
 		s1.getDetails(id, name, course);
 
+		// taking input
+		System.out.println("Enter the student Name:");
+		name = sc.next();
+		System.out.println("Enter the student Id:");
+		id = sc.nextInt();
+
+		System.out.println("Enter the student Course:");
+		course = sc.next();
+
+		// call the method getDetails
+		s2.getDetails(id, name, course);
+
 		// printDetails()
 
 		System.out.println("-------------------------------------");
 		System.out.println("-------------------------------------");
 
 		s1.printDetails();
+
+		System.out.println("-------------------------------------");
+		s2.printDetails();
 
 		sc.close();
 
