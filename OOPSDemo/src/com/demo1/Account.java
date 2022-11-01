@@ -12,10 +12,21 @@ public class Account {
 	// method to enter bank details
 	void enterBankDetails(int id, String name, double bal, String pan) {
 
+		System.out.println("In method 1");
 		accID = id;
 		accName = name;
 		balance = bal;
 		panNumber = pan;
+
+	}
+
+	void enterBankDetails(int id, String name, double bal) {
+
+		System.out.println("Method 2");
+
+		accID = id;
+		accName = name;
+		balance = bal;
 
 	}
 

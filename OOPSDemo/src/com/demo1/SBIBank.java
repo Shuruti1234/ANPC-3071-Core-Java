@@ -50,9 +50,12 @@ public class SBIBank {
 				String name = sc.next();
 				System.out.println("Starting balance:");
 				double bal = sc.nextDouble();
-				System.out.println("PanCard Number:");
-				String pan = sc.next();
-				a1.enterBankDetails(id, name, bal, pan);
+				if (bal > 2000) {
+					System.out.println("PanCard Number:");
+					String pan = sc.next();
+					a1.enterBankDetails(id, name, bal, pan);
+				} else
+					a1.enterBankDetails(id, name, bal);
 				break;
 
 			case 2:
