@@ -11,29 +11,37 @@ public class Student {
 	public Student() {
 		// calling the Object class
 		super(); // can be omitted
-
+		this.id = 0;
+		this.stName = "Unknown";
+		this.marks = 40.0f;
 		System.out.println("Default............");
 
 	}
 
 	// parameterised constructor
-	public Student(int id, String stName, float marks) {
-		super();
+	public Student(int id, String stName) {
+		this(); // constructor chaining
 		System.out.println("Paramterized 1.............");
-
-		// this refers to current object
 		this.id = id;
 		this.stName = stName;
-		this.marks = marks;
+
 	}
 
 	// parameterised constructor
-	public Student(int id, String stName) {
-		super();
-		System.out.println("Paramterized 2.............");
+	public Student(int id, String stName, float marks) {
+		this(id, stName);
+		System.out.println("Paramterized 2............");
+		// this refers to current object
+		this.marks = marks;
 
-		this.id = id;
-		this.stName = stName;
+	}
+
+	// copy constructor
+
+	public Student(Student s) {
+		this.id = s.id;
+		this.stName = s.stName;
+		this.marks = s.marks;
 	}
 
 	public int getId() {
