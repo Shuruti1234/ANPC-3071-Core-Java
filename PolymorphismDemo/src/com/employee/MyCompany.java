@@ -6,7 +6,7 @@ public class MyCompany {
 		// TODO Auto-generated method stub
 
 		Employee e1 = new Employee();
-		e1.enterDetails(101, "Sonali", 78090.50);
+		e1.enterDetails(101, "Sonali", 78090.50);// loose coupling
 		e1.hikeSalary();
 		Employee e2 = new Employee();
 		e2.enterDetails(102, "Pranjal", 90876.80);
